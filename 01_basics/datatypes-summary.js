@@ -35,3 +35,25 @@ myFunction();
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+//**************** memory *************************/
+
+//stack (primitive) Heap (non primitive)
+
+let myYoutubename = "dharmrajzine.com"
+let anothername = myYoutubename;
+anothername = "chaiOurCode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "dharmraj@google.com"
+
+console.log(userOne.email)
+console.log(userTwo.email);
